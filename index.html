@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <img src="img/RevoU-logo.png" alt="RevoU Logo" class="logo">
+        <div class="navbar-nav">
+            <div class="navbar-item"><p onclick="location.href='index.html'">Home</p></div>
+            <div class="navbar-item"><p onclick="location.href='profile.html'">Our Profile</p></div>
+            <div class="navbar-item"><p>Portofolio</p></div>
+            <div class="navbar-item"><p>Message Us</p></div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section class="hero" id="home">
+        <h1>Hi <span id="nama"></span>, Welcome to CafeinCoffee </h1>
+        <p>Ini adalah website kopi CafeinCoffee</p>
+    </section>
+    <!-- hero section end -->
+
+    <!-- headquarter section start -->
+    <section id="headquarter" class="headquarter">
+        <h1>Our Headquarters</h1>
+        <div class="row">
+            <div class="headquarter-container">
+                <img src="img/jakarta.JPG" alt="Jakarta" class="headquarter-container-tittle">
+                <p>Jakarta</p>
+            </div>
+            <div class="headquarter-container">
+                <img src="img/bandung.jpg" alt="Bandung" class="headquarter-container-tittle">
+                <p>Bandung</p>
+            </div>
+            <div class="headquarter-container">
+                <img src="img/surabaya.jpg" alt="Surabaya" class="headquarter-container-tittle">
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </section>
+    <!-- headquarter section end -->
+
+    <!-- message section start -->
+    <section id="message" class="message">
+        <h1>Message Us</h1>
+        <div class="row">
+            <form name="message-form" onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input placeholder="Nama" type="text" name="full-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" name="birth-date"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="Laki-laki">Laki-laki</input>
+                            <input type="radio" id="female" name="gender" value="Perempuan">Perempuan</input> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td>:</td>
+                        <td>
+                            <textarea placeholder="Pesan" name="message"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="btn" type="submit" value="Submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="message-form-output">
+                <table class="table">
+                    <tr>
+                        <td>Nama <td>: <span id="sender-full-name"></span></td></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir <td>: <span id="sender-birth-date"></span></td></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin <td>: <span id="sender-gender"></span></td></td>
+                    </tr>
+                    <tr>
+                        <td>Pesan <td>: <span id="sender-message"></span></td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- message section end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+        <p>Created by Lalu Adam Risaldi</p>
+    </footer>
+    <!-- footer end -->
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

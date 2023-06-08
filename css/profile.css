@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3%;
+    border: 1px solid black;
+}
+
+.logo {
+    font-size: 1.5rem;
+    height: 2em;
+}
+
+.navbar-nav {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.navbar-item {
+    padding: 5px 1em;
+    width: 120px;
+    border-right: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-item:hover {
+    background: lightblue;
+    margin-top: -3px;
+}
+
+.navbar-nav:last-child {
+    border-right: none;
+}
+
+/* hero section */
+.hero {
+    min-height: 100vh;
+    background-image: url('../img/kopi-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem 6% 1.4rem;
+    border: 1px solid black;
+    color: rgb(255, 255, 255);
+}
+
+/* footer */
+.footer {
+    display: flex;
+    border: 1px solid black;
+    padding: 5px 1em;
+}
